@@ -141,10 +141,10 @@ Single, Double, Boolean, Decimal, Object, String
 - Use either private fields (or) public properties. Do not use public fields.
 
 - String
-    - Use ***StringBuilder*** over string and operator '+' for multiple string concatenations as it will be faster.
+    - Use ***StringBuilder*** over ***string*** and operator '+' for multiple string concatenations as StringBuilder will have better performance.
 - Const | ReadOnly
-    - Declare the property as const if it's value is not going to be changed in the run time.
-    - Prefer using const if it's value is going to be changed in the run time.
+    - Declare the variable as ***const*** if it's value is not going to be changed in lifetime of the application(i.e during both compile time and run time).
+    - Use ***readonly*** for the fields if it's value is going to be assigned either during the compile time or run time.
 - ref and out
     - Use ***out*** for return parameters that are not also an input.
     - Place ***out*** parameters after all other parameters in the method definition.    
